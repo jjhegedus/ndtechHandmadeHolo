@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AppView.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="Utilities.cpp" />
+    <ClCompile Include="DirectXScheduler.cpp" />
+    <ClCompile Include="DirectXSchedulingCoroutine.cpp" />
+    <ClCompile Include="VoidCoroutine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="App.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="DirectXHelper.h" />
+    <ClInclude Include="BaseCoroutine.h" />
+    <ClInclude Include="SynchronousCoroutine.h" />
+    <ClInclude Include="ResumableCoroutine.h" />
+    <ClInclude Include="BaserCoroutine.h" />
+    <ClInclude Include="ShaderStructures.h" />
+    <ClInclude Include="EveryOtherCoroutine.h" />
+    <ClInclude Include="IAsyncSpecializations.h" />
+    <ClInclude Include="DirectXScheduler.h" />
+    <ClInclude Include="DirectXSchedulingCoroutine.h" />
+    <ClInclude Include="DirectXVertexShader.h" />
+    <ClInclude Include="DataProducingCoroutine.h" />
+    <ClInclude Include="VoidCoroutine.h" />
+    <ClInclude Include="ResumableDataProducingCoroutine.h" />
+    <ClInclude Include="Scheduler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Logo.scale-100.png" />
+    <Image Include="Assets\SmallLogo.scale-100.png" />
+    <Image Include="Assets\StoreLogo.scale-100.png" />
+    <Image Include="Assets\SplashScreen.scale-100.png" />
+    <Image Include="Assets\WideLogo.scale-100.png" />
+    <Image Include="bitmap1.bmp" />
+    <Image Include="Content\placeholder.dds">
+      <Filter>Content</Filter>
+    </Image>
+    <Image Include="Content\test.dds">
+      <Filter>Content</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.winmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Content">
+      <UniqueIdentifier>{f233bd99-7b47-4cdc-9b56-e432cd4c44b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Shaders">
+      <UniqueIdentifier>{72438e2f-7c60-40f3-af89-f9053f234787}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ndtech.test.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageContentTask Include="placeholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="VertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GeometryShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="VPRTVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="TextBillboardVertexShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="DistanceFieldPixelShader.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
